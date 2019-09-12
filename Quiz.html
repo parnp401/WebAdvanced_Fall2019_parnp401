@@ -93,6 +93,17 @@ body, html {
 .btn-group button:hover {
   background-color: #1da3bb;
 }
+.btn-group button:active{
+    background-color: #a1190f;
+}
+.btn-group button:focus{
+    background-color: #a1190f;
+}
+.btn-group button:visited{
+    background: #a1190f;
+}
+
+
 </head>
 </style>
 
@@ -129,7 +140,7 @@ body, html {
 <button class="accordion">What's the capital of Germany?</button>
 <div class="btn-group">
     <button onclick="myFunction()">Bonn</button>
-    <p id="demo"></p>
+    <p id="bonn"></p>
     <button>Munich</button>
     <button>Berlin</button>
   </div>
@@ -152,9 +163,9 @@ body, html {
 <script>
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Wrong!";
+  document.getElementById("bonn").innerHTML = "Wrong!";
 }
-var acc = document.getElementsByClassName("accordion");
+/*var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
