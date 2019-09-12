@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>What's the temperature?</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">Start</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var letter = document.getElementById("myInput").value;
+  var text;
+
+  if (letter < 32) {
+     text = "Below freezing";
+     } else {
+       text = "Above freezing";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
